@@ -13,10 +13,10 @@ Cleaned data from the Cochrane schizophrenia database
 bash scripts/convert.sh
 ```
 
-## Deploy the database to a local container
+## Run the local database
 
 ```bash
-bash scripts/deploy.sh
+bash scripts/serve.sh
 ```
 
 Postgres database `postgres` will be available at `localhost:15431` for user `postgres` with no password. To start psql shell:
@@ -25,9 +25,6 @@ Postgres database `postgres` will be available at `localhost:15431` for user `po
 psql -p 15431 -h localhost -U postgres postgres
 ```
 
-## Dump the database to the archive
+## Import/Export dirty/clean databases
 
-```bash
-bash scripts/dump.sh
-ls archive/dirty/sql/database.zip
-```
+See `scripts/<dirty/clean>`

@@ -43,7 +43,7 @@ bash scripts/clean/export.sh
 ```
 
 Artifacts will be in the `archive/clean` dir.
-For example sql dump - `archive/dirty/sql/database.sql`
+For example sql dump - `archive/clean/sql/database.sql`
 
 ## Convert the dirty database (sql2csv)
 

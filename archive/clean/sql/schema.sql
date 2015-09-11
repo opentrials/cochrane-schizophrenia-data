@@ -20,12 +20,15 @@ CREATE TABLE "trial"
     "scientific_title" text,
     "condition_or_problem" text,
     "source_of_funding" text,
+    "countries" text,
+    "contacts" text,
     "date_from" date,
     "date_to" date,
+    "notes" text,
 
     -- Participants
     "exclusion_criteria" text,
-    "sample_size" integer,
+    "sample_size" text,
     "age_from" smallint,
     "age_to" smallint,
     "sex" sex_type,

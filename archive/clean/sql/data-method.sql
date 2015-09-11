@@ -7,7 +7,7 @@ SET client_encoding = 'UTF-8';
 
 
 -- Data from method
-INSERT INTO "clean"."method"
+INSERT INTO "clean"."method" ("id", "description")
 SELECT "MethodofAllocationID", "MethodofAllocationDescription"
 FROM "dirty"."tblMethodofAllocation";
 

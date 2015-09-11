@@ -7,7 +7,13 @@ Cleaned data from the Cochrane schizophrenia database
 - zip, mdbtools
 - Docker, psql, pgAdmin (opt)
 
-## Quick start
+## Clean database dump
+
+```
+archive/clean/sql/database.sql
+```
+
+## Quick start to get up and running
 
 To run local Postgres server with the clean database:
 

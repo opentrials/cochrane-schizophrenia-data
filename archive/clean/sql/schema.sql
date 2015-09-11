@@ -12,20 +12,28 @@ SET client_encoding = 'UTF-8';
 CREATE TYPE sex_type AS ENUM ('male', 'female');
 CREATE TABLE "trial"
 (
+
     "id" serial,
+
+    -- General
     "public_title" text,
     "scientific_title" text,
     "condition_or_problem" text,
     "source_of_funding" text,
     "date_from" date,
     "date_to" date,
+
+    -- Participants
     "exclusion_criteria" text,
     "sample_size" integer,
     "age_from" smallint,
     "age_to" smallint,
     "sex" sex_type,
+
+    -- Process
     "interventions" text[],
     "outcomes" text[]
+
 );
 ALTER TABLE "trial" ADD CONSTRAINT "trial_pkey" PRIMARY KEY ("id");
 

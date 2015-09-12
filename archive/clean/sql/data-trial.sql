@@ -28,4 +28,13 @@ SELECT
 FROM "dirty"."tblStudy";
 
 
+-- Data from intervention
+UPDATE "clean"."trial" as t SET "interventions" = array(
+  SELECT "i"."InterventionDescription"
+  FROM "dirty"."tblIntervention" AS i, "dirty"."tblStudyIntervention" AS si
+  WHERE "si"."CRGStudyID" = "t"."id"
+  AND "si"."InterventionID" = "i"."InterventionID"
+);
+
+
 END;

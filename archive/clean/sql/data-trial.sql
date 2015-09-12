@@ -37,4 +37,12 @@ UPDATE "clean"."trial" as t SET "interventions" = array(
 );
 
 
+UPDATE "clean"."trial" as t SET "outcomes" = array(
+  SELECT "c"."OutcomeDescription"
+  FROM "dirty"."tblOutcome" AS c, "dirty"."tblStudyOutcome" AS sc
+  WHERE "sc"."CRGStudyID" = "t"."id"
+  AND "sc"."OutcomeID" = "c"."OutcomeID"
+);
+
+
 END;

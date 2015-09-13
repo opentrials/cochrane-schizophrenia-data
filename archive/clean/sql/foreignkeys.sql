@@ -16,4 +16,9 @@ ALTER TABLE "trial2method" ADD CONSTRAINT "trial2method_trial_id_fk" FOREIGN KEY
 ALTER TABLE "trial2method" ADD CONSTRAINT "trial2method_method_id_fk" FOREIGN KEY ("method_id") REFERENCES "method"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
+-- Trial/Drug
+ALTER TABLE "trial2drug" ADD CONSTRAINT "trial2drug_trial_id_fk" FOREIGN KEY ("trial_id") REFERENCES "trial"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE "trial2drug" ADD CONSTRAINT "trial2drug_drug_id_fk" FOREIGN KEY ("drug_id") REFERENCES "drug"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
 END;

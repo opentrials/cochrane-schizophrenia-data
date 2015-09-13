@@ -28,6 +28,16 @@ SELECT
 FROM "dirty"."tblStudy";
 
 
+-- Data from participant
+UPDATE "clean"."trial" as t SET "sex" = array(
+  SELECT "p"."ParticipantDescription"
+  FROM "dirty"."tblParticipant" AS p, "dirty"."tblStudyParticipant" AS sp
+  WHERE "sp"."CRGStudyID" = "t"."id"
+  AND "sp"."ParticipantsID" = "p"."ParticipantsID"
+  AND ("p"."ParticipantDescription" = 'Male' OR  "p"."ParticipantDescription" = 'Female')
+)::"clean"."sex_type"[];
+
+
 -- Data from intervention
 UPDATE "clean"."trial" as t SET "interventions" = array(
   SELECT "i"."InterventionDescription"

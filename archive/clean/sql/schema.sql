@@ -9,7 +9,7 @@ SET client_encoding = 'UTF-8';
 
 
 -- Trial
-CREATE TYPE sex_type AS ENUM ('male', 'female');
+CREATE TYPE sex_type AS ENUM ('Male', 'Female');
 CREATE TABLE "trial"
 (
 
@@ -31,7 +31,7 @@ CREATE TABLE "trial"
     "sample_size" text,
     "age_from" smallint,
     "age_to" smallint,
-    "sex" sex_type,
+    "sex" sex_type[],
 
     -- Process
     "interventions" text[],

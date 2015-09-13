@@ -113,21 +113,30 @@ CREATE TABLE "trial2drug"
 ALTER TABLE "trial2drug" ADD CONSTRAINT "trial2drug_pkey" PRIMARY KEY ("trial_id", "drug_id");
 
 
--- Register entry
-CREATE TABLE "register_entry"
+-- Document
+CREATE TABLE "document"
 (
     "id" serial,
-    "source_id"    integer,
-    "register_info" jsonb
+    "tag" text,
+    "type" text
 );
-ALTER TABLE "register_entry" ADD CONSTRAINT "register_entry_pkey" PRIMARY KEY ("id");
+ALTER TABLE "document" ADD CONSTRAINT "document_pkey" PRIMARY KEY ("id");
 
 
--- Results doc
-CREATE TABLE "results_doc"
+-- Trial/Document
+CREATE TABLE "trial2document"
+(
+    "trial_id" integer,
+    "document_id" integer
+);
+ALTER TABLE "trial2document" ADD CONSTRAINT "trial2document_pkey" PRIMARY KEY ("trial_id", "document_id");
+
+
+-- Review
+CREATE TABLE "review"
 (
     "id" serial,
-    "title"    text,
+    "title" text,
     "type" text,
     "structured_data" text,
     "document_id" text,
@@ -136,17 +145,26 @@ CREATE TABLE "results_doc"
     "authors" text,
     "source" text
 );
-ALTER TABLE "results_doc" ADD CONSTRAINT "results_doc_pkey" PRIMARY KEY ("id");
+ALTER TABLE "review" ADD CONSTRAINT "review_pkey" PRIMARY KEY ("id");
 
 
--- Document
-CREATE TABLE "document"
+-- Trial/Review
+CREATE TABLE "trial2review"
+(
+    "trial_id" integer,
+    "review_id" integer
+);
+ALTER TABLE "trial2review" ADD CONSTRAINT "trial2review_pkey" PRIMARY KEY ("trial_id", "review_id");
+
+
+-- Register entry
+CREATE TABLE "register_entry"
 (
     "id" serial,
-    "label" text,
-    "type" text
+    "source_id"    integer,
+    "register_info" jsonb
 );
-ALTER TABLE "document" ADD CONSTRAINT "document_pkey" PRIMARY KEY ("id");
+ALTER TABLE "register_entry" ADD CONSTRAINT "register_entry_pkey" PRIMARY KEY ("id");
 
 
 END;

@@ -5,8 +5,10 @@ BEGIN;
 SET search_path = "clean", pg_catalog;
 SET client_encoding = 'UTF-8';
 
+
 -- trial.source_id
 ALTER TABLE "trial" ADD CONSTRAINT "trial_source_id" FOREIGN KEY ("source_id") REFERENCES "source"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
 
 -- trial2condition
 ALTER TABLE "trial2condition" ADD CONSTRAINT "trial2condition_trial_id_fk" FOREIGN KEY ("trial_id") REFERENCES "trial"("id") ON UPDATE CASCADE ON DELETE CASCADE;
@@ -21,6 +23,16 @@ ALTER TABLE "trial2method" ADD CONSTRAINT "trial2method_method_id_fk" FOREIGN KE
 -- trial2drug
 ALTER TABLE "trial2drug" ADD CONSTRAINT "trial2drug_trial_id_fk" FOREIGN KEY ("trial_id") REFERENCES "trial"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE "trial2drug" ADD CONSTRAINT "trial2drug_drug_id_fk" FOREIGN KEY ("drug_id") REFERENCES "drug"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+-- trial2document
+ALTER TABLE "trial2document" ADD CONSTRAINT "trial2document_trial_id_fk" FOREIGN KEY ("trial_id") REFERENCES "trial"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE "trial2document" ADD CONSTRAINT "trial2document_document_id_fk" FOREIGN KEY ("document_id") REFERENCES "document"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+-- trial2review
+ALTER TABLE "trial2review" ADD CONSTRAINT "trial2review_trial_id_fk" FOREIGN KEY ("trial_id") REFERENCES "trial"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE "trial2review" ADD CONSTRAINT "trial2review_review_id_fk" FOREIGN KEY ("review_id") REFERENCES "review"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 END;

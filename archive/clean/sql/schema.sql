@@ -179,4 +179,30 @@ CREATE TABLE "review2document"
 ALTER TABLE "review2document" ADD CONSTRAINT "review2document_pkey" PRIMARY KEY ("review_id", "document_id");
 
 
+-- Author
+CREATE TABLE "author"
+(
+    "id" serial,
+    "prefix" text,
+    "first_name" text,
+    "last_name" text,
+    "suffix" text,
+    "organisation" text,
+    "department" text,
+    "position" text,
+    "email" text,
+    "url" text
+);
+ALTER TABLE "author" ADD CONSTRAINT "author_pkey" PRIMARY KEY ("id");
+
+
+-- Review/Author
+CREATE TABLE "review2author"
+(
+    "review_id" integer,
+    "author_id" integer
+);
+ALTER TABLE "review2author" ADD CONSTRAINT "review2author_pkey" PRIMARY KEY ("review_id", "author_id");
+
+
 END;

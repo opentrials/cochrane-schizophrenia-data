@@ -149,13 +149,4 @@ CREATE TABLE "document"
 ALTER TABLE "document" ADD CONSTRAINT "document_pkey" PRIMARY KEY ("id");
 
 
--- Provenance
-CREATE TABLE "provenance"
-(
-    "id" serial,
-    "timestamp"    timestamp
-);
-ALTER TABLE "provenance" ADD CONSTRAINT "provenance_pkey" PRIMARY KEY ("id");
-
-
 END;

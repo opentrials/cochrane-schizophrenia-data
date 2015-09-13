@@ -39,9 +39,6 @@ ALTER TABLE "trial2review" ADD CONSTRAINT "trial2review_trial_id_fk" FOREIGN KEY
 ALTER TABLE "trial2review" ADD CONSTRAINT "trial2review_review_id_fk" FOREIGN KEY ("review_id") REFERENCES "review"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
--- review.source_id
-ALTER TABLE "review" ADD CONSTRAINT "review_source_id" FOREIGN KEY ("source_id") REFERENCES "source"("id") ON UPDATE CASCADE ON DELETE CASCADE;
-
 
 -- review2document
 ALTER TABLE "review2document" ADD CONSTRAINT "review2document_review_id_fk" FOREIGN KEY ("review_id") REFERENCES "review"("id") ON UPDATE CASCADE ON DELETE CASCADE;

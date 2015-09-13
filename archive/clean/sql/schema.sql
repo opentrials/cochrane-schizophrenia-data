@@ -16,6 +16,7 @@ CREATE TABLE "trial"
     "id" serial,
 
     -- General
+    "source_id" integer,
     "public_title" text,
     "scientific_title" text,
     "condition_or_problem" text,
@@ -39,6 +40,17 @@ CREATE TABLE "trial"
 
 );
 ALTER TABLE "trial" ADD CONSTRAINT "trial_pkey" PRIMARY KEY ("id");
+
+
+-- Source
+CREATE TABLE "source"
+(
+    "id" serial,
+    "title" text,
+    "description" text,
+    "category" text
+);
+ALTER TABLE "source" ADD CONSTRAINT "source_pkey" PRIMARY KEY ("id");
 
 
 -- Method
@@ -125,18 +137,6 @@ CREATE TABLE "results_doc"
     "source" text
 );
 ALTER TABLE "results_doc" ADD CONSTRAINT "results_doc_pkey" PRIMARY KEY ("id");
-
-
--- Source
-CREATE TABLE "source"
-(
-    "id" serial,
-    "title"    text,
-    "descrition" text,
-    "category" text,
-    "cochrane" boolean
-);
-ALTER TABLE "source" ADD CONSTRAINT "source_pkey" PRIMARY KEY ("id");
 
 
 -- Document

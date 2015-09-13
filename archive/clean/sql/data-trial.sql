@@ -10,6 +10,7 @@ SET client_encoding = 'UTF-8';
 INSERT INTO "clean"."trial"
 (
     "id",
+    "source_id",
     "public_title",
     "countries",
     "sample_size",
@@ -19,6 +20,7 @@ INSERT INTO "clean"."trial"
 )
 SELECT
     "CRGStudyID",
+    1,
     "ShortName",
     "UDef2",
     "UDef1",

@@ -37,6 +37,7 @@ UPDATE "clean"."trial" as t SET "interventions" = array(
 );
 
 
+-- Data from outcome
 UPDATE "clean"."trial" as t SET "outcomes" = array(
   SELECT "c"."OutcomeDescription"
   FROM "dirty"."tblOutcome" AS c, "dirty"."tblStudyOutcome" AS sc

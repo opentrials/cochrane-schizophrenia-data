@@ -118,7 +118,8 @@ CREATE TABLE "document"
 (
     "id" serial,
     "tag" text,
-    "type" text
+    "type" text,
+    "contents" bytea
 );
 ALTER TABLE "document" ADD CONSTRAINT "document_pkey" PRIMARY KEY ("id");
 
@@ -136,14 +137,13 @@ ALTER TABLE "trial2document" ADD CONSTRAINT "trial2document_pkey" PRIMARY KEY ("
 CREATE TABLE "review"
 (
     "id" serial,
-    "title" text,
     "type" text,
+    "title" text,
+    "source_id" integer,
     "structured_data" text,
-    "document_id" text,
     "link" text,
     "free_text" text,
-    "authors" text,
-    "source" text
+    "authors" text
 );
 ALTER TABLE "review" ADD CONSTRAINT "review_pkey" PRIMARY KEY ("id");
 
@@ -155,6 +155,15 @@ CREATE TABLE "trial2review"
     "review_id" integer
 );
 ALTER TABLE "trial2review" ADD CONSTRAINT "trial2review_pkey" PRIMARY KEY ("trial_id", "review_id");
+
+
+-- Review/Document
+CREATE TABLE "review2document"
+(
+    "review_id" integer,
+    "document_id" integer
+);
+ALTER TABLE "review2document" ADD CONSTRAINT "review2document_pkey" PRIMARY KEY ("review_id", "document_id");
 
 
 -- Register entry

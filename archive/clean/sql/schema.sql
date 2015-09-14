@@ -152,7 +152,7 @@ CREATE TABLE "review"
     "language" text,
 
     -- Registration
-    "central_id" text,
+    "central_id" integer,
     "central_status" text,
     "central_date" timestamp,
 

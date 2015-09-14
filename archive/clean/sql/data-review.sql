@@ -37,7 +37,7 @@ SELECT
     "Abstract",
     "Language",
 
-    "CENTRALReportID",
+    "CENTRALReportID"::integer,
     "CENTRALSubmissionStatus",
     "DatetoCENTRAL",
 

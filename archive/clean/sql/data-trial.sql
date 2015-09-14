@@ -29,7 +29,7 @@ SELECT
     "ShortName",
     "CENTRALStudyID",
     "CENTRALSubmissionStatus",
-    "DateToCENTRAL",
+    "DateToCENTRAL"::date,
     "UDef2",
     "UDef1",
     "UDef5",

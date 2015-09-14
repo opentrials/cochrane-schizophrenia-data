@@ -39,7 +39,7 @@ SELECT
 
     "CENTRALReportID"::integer,
     "CENTRALSubmissionStatus",
-    "DatetoCENTRAL",
+    "DatetoCENTRAL"::date,
 
     "Authors",
     "Journal",

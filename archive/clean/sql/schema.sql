@@ -30,7 +30,7 @@ CREATE TABLE "trial"
     -- Registration
     "central_id" integer,
     "central_status" text,
-    "central_date" timestamp,
+    "central_date" date,
 
     -- Participants
     "exclusion_criteria" text,
@@ -154,7 +154,7 @@ CREATE TABLE "review"
     -- Registration
     "central_id" integer,
     "central_status" text,
-    "central_date" timestamp,
+    "central_date" date,
 
     -- Publication
     "authors" text,

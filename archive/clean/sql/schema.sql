@@ -151,12 +151,19 @@ CREATE TABLE "review"
 (
     "id" serial,
     "type" text,
-    "title" text,
-    "source_id" integer,
-    "structured_data" text,
     "link" text,
-    "free_text" text,
-    "authors" text
+    "title" text,
+    "authors" text,
+    "contacts" text,
+    "publisher" text,
+    "journal" text,
+    "year" text,
+    "volume" text,
+    "issue" text,
+    "pages" text,
+    "language" text,
+    "abstract" text,
+    "notes" text
 );
 ALTER TABLE "review" ADD CONSTRAINT "review_pkey" PRIMARY KEY ("id");
 

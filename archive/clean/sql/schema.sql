@@ -141,21 +141,29 @@ ALTER TABLE "trial2document" ADD CONSTRAINT "trial2document_pkey" PRIMARY KEY ("
 -- Review
 CREATE TABLE "review"
 (
+    -- General
     "id" serial,
     "type" text,
     "link" text,
     "title" text,
-    "authors" text,
+    "notes" text,
     "contacts" text,
+    "abstract" text,
+    "language" text,
+
+    -- Registration
+    "central_id" text,
+    "central_status" text,
+    "central_date" timestamp,
+
+    -- Publication
+    "authors" text,
     "publisher" text,
     "journal" text,
     "year" text,
     "volume" text,
     "issue" text,
-    "pages" text,
-    "language" text,
-    "abstract" text,
-    "notes" text
+    "pages" text
 );
 ALTER TABLE "review" ADD CONSTRAINT "review_pkey" PRIMARY KEY ("id");
 

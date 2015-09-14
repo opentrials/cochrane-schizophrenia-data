@@ -12,32 +12,42 @@ INSERT INTO "clean"."review" (
     "type",
     "title",
     "notes",
+    "contacts",
+    "abstract",
+    "language",
+
+    "central_id",
+    "central_status",
+    "central_date",
+
     "authors",
     "journal",
     "year",
     "volume",
     "issue",
     "pages",
-    "contacts",
-    "publisher",
-    "language",
-    "abstract"
+    "publisher"
 )
 SELECT
     "CRGReportID",
     "PublicationTypeDescription",
     "Title",
     "Notes",
+    "UDef3",
+    "Abstract",
+    "Language",
+
+    "CENTRALReportID",
+    "CENTRALSubmissionStatus",
+    "DatetoCENTRAL",
+
     "Authors",
     "Journal",
     "Year",
     "Volume",
     "Issue",
     "Pages",
-    "UDef3",
-    "Publisher",
-    "Language",
-    "Abstract"
+    "Publisher"
 FROM "dirty"."tblReport" as r, "dirty"."tblPublicationType" as p
 WHERE "r"."PublicationTypeID" = "p"."PublicationTypeID";
 

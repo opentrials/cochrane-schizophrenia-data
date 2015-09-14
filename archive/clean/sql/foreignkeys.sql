@@ -45,9 +45,4 @@ ALTER TABLE "review2document" ADD CONSTRAINT "review2document_review_id_fk" FORE
 ALTER TABLE "review2document" ADD CONSTRAINT "review2document_document_id_fk" FOREIGN KEY ("document_id") REFERENCES "document"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
--- review2author
-ALTER TABLE "review2author" ADD CONSTRAINT "review2author_review_id_fk" FOREIGN KEY ("review_id") REFERENCES "review"("id") ON UPDATE CASCADE ON DELETE CASCADE;
-ALTER TABLE "review2author" ADD CONSTRAINT "review2author_author_id_fk" FOREIGN KEY ("author_id") REFERENCES "author"("id") ON UPDATE CASCADE ON DELETE CASCADE;
-
-
 END;

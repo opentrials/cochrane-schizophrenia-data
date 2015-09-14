@@ -12,6 +12,7 @@ INSERT INTO "clean"."trial"
     "id",
     "source_id",
     "public_title",
+    "scientific_title",
     "countries",
     "sample_size",
     "condition_or_problem",
@@ -21,6 +22,7 @@ INSERT INTO "clean"."trial"
 SELECT
     "CRGStudyID",
     1,
+    "ShortName",
     "ShortName",
     "UDef2",
     "UDef1",

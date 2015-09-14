@@ -18,8 +18,7 @@ archive/clean/sql/database.sql
 To run local Postgres server with the clean database:
 
 ```bash
-bash scripts/serve.sh
-bash scripts/deploy.sh
+bash scripts/serve.sh && bash scripts/deploy.sh
 ```
 
 Postgres database `postgres` will be available at `localhost:15431` for user `postgres` with no password. To start psql shell:

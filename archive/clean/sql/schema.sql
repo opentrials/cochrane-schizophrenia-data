@@ -27,6 +27,11 @@ CREATE TABLE "trial"
     "date_to" date,
     "notes" text,
 
+    -- Registration
+    "central_id" integer,
+    "central_status" text,
+    "central_date" timestamp,
+
     -- Participants
     "exclusion_criteria" text,
     "sample_size" text,

@@ -17,7 +17,6 @@ CREATE TABLE "trial"
 
     -- General
     "source_id" integer,
-    "registration_id" integer,
     "public_title" text,
     "scientific_title" text,
     "condition_or_problem" text,
@@ -41,18 +40,6 @@ CREATE TABLE "trial"
 
 );
 ALTER TABLE "trial" ADD CONSTRAINT "trial_pkey" PRIMARY KEY ("id");
-
-
--- Registration
-CREATE TABLE "registration"
-(
-    "id" serial,
-    "central_id" integer,
-    "central_status" text,
-    "central_date" date,
-    "contents" bytea
-);
-ALTER TABLE "registration" ADD CONSTRAINT "registration_pkey" PRIMARY KEY ("id");
 
 
 -- Source

@@ -10,10 +10,6 @@ SET client_encoding = 'UTF-8';
 ALTER TABLE "trial" ADD CONSTRAINT "trial_source_id" FOREIGN KEY ("source_id") REFERENCES "source"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
--- trial.registration_id
-ALTER TABLE "trial" ADD CONSTRAINT "trial_registration_id" FOREIGN KEY ("registration_id") REFERENCES "registration"("id") ON UPDATE CASCADE ON DELETE CASCADE;
-
-
 -- trial2condition
 ALTER TABLE "trial2condition" ADD CONSTRAINT "trial2condition_trial_id_fk" FOREIGN KEY ("trial_id") REFERENCES "trial"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE "trial2condition" ADD CONSTRAINT "trial2condition_condition_id_fk" FOREIGN KEY ("condition_id") REFERENCES "condition"("id") ON UPDATE CASCADE ON DELETE CASCADE;

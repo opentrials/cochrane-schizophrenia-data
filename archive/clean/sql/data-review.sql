@@ -39,8 +39,7 @@ SELECT
     "Language",
     "Abstract"
 FROM "dirty"."tblReport" as r, "dirty"."tblPublicationType" as p
-WHERE "r"."PublicationTypeID" = "p"."PublicationTypeID"
-AND "r"."CRGReportID" != 147;
+WHERE "r"."PublicationTypeID" = "p"."PublicationTypeID";
 
 
 END;

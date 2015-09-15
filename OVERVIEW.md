@@ -1,4 +1,4 @@
-# Data model and migration: high level overview
+# Data model and migration: high-level overview
 
 ## Current data model
 
@@ -24,7 +24,7 @@ With `Trial` can be associated one or many (m2m relation):
 - `Drug`
 - `Review`
 - `Document`
- 
+
 With `Review` can be associated one or many (m2m relation):
 - `Document`
 
@@ -46,7 +46,7 @@ The cochrane database lacks:
 Important Cochrane's data we don't use:
 - data about `Review`'s reviews like date, reviewer etc
 - data about reviewers (306 items in Cochrane)
- 
+
 ## Structuring data
 
 For now we have not the data we've logically structured while the migration process. We've converted some m2m tables to arrays, added enum for sex etc. But it's not an adding a new structure.

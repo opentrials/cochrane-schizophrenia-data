@@ -11,7 +11,7 @@ Data model after migration - [ER-Diagram](https://cloud.githubusercontent.com/as
 - `Condition` - illness, injury, impairment etc (256)
 - `Method` - trial type, methodology (45)
 - `Drug` - a chemical substance to heal people (0)
-- `Review` - a publication about a trial (19764)
+- `Review` - a publication about a trial (20k)
 - `Document` - blob document to associate with any entity (0)
 
 ### Relations
@@ -52,5 +52,7 @@ Important Cochrane's data we don't use:
 For now we have not the data we've logically structured while the migration process. We've converted some m2m tables to arrays, added enum for sex etc. But it's not an adding a new structure.
 
 ## Notes
+
+The Cochrane database lacks structured data in a comparision with the data from https://clinicaltrials.gov/. Having (and learning from) more datasets we can improve our data model, make it more structured. It means the Cochrane's data also can be improved after we've got other datasets. For example we can parse trial-drug relations after getting some drug list.
 
 

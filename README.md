@@ -1,7 +1,7 @@
 # opentrials-cochrane-schizophrenia-data
 
 Cleaned data from the Cochrane schizophrenia database.
-High-level data model and migration process overview - [OVERVIEW.md](https://github.com/okfn/opentrials-cochrane-schizophrenia-data/blob/master/README.md)
+High-level data model and migration process overview - [OVERVIEW.md](https://github.com/okfn/opentrials-cochrane-schizophrenia-data/blob/master/OVERVIEW.md)
 
 ## Prerequisites
 

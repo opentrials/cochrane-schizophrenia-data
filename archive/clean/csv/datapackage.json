@@ -29,7 +29,8 @@
                         "name": "description",
                         "type": "string"
                     }
-                ]
+                ],
+                "primaryKey": "id"
             }
         },
         {
@@ -52,7 +53,8 @@
                         "name": "contents",
                         "type": "binary"
                     }
-                ]
+                ],
+                "primaryKey": "id"
             }
         },
         {
@@ -67,7 +69,8 @@
                         "name": "description",
                         "type": "string"
                     }
-                ]
+                ],
+                "primaryKey": "id"
             }
         },
         {
@@ -142,7 +145,8 @@
                         "name": "pages",
                         "type": "string"
                     }
-                ]
+                ],
+                "primaryKey": "id"
             }
         },
         {
@@ -165,7 +169,8 @@
                         "name": "category",
                         "type": "string"
                     }
-                ]
+                ],
+                "primaryKey": "id"
             }
         },
         {
@@ -256,7 +261,8 @@
                         "name": "outcomes",
                         "type": "string"
                     }
-                ]
+                ],
+                "primaryKey": "id"
             }
         },
         {
@@ -271,7 +277,8 @@
                         "name": "condition_id",
                         "type": "number"
                     }
-                ]
+                ],
+                "primaryKey": ["trial_id", "condition_id"]
             }
         },
         {
@@ -286,7 +293,8 @@
                         "name": "method_id",
                         "type": "number"
                     }
-                ]
+                ],
+                "primaryKey": ["trial_id", "method_id"]
             }
         },
         {
@@ -301,7 +309,8 @@
                         "name": "review_id",
                         "type": "number"
                     }
-                ]
+                ],
+                "primaryKey": ["trial_id", "review_id"]
             }
         }
     ]

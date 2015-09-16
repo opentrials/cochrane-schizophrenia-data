@@ -67,4 +67,3 @@ For example sql dump - `archive/clean/sql/database.sql`
 ```bash
 bash scripts/clean/convert.sh
 ```
-*under development*

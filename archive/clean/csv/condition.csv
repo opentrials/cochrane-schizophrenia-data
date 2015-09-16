@@ -1,0 +1,257 @@
+id,meddra,who_icd_10,description
+1177,,,A - Delusional Disorder
+1178,,,A - Health Care Professionals
+1179,,,A - Healthy volunteers
+1180,,,A - Lay carers/family
+1182,,,A - Schizoaffective disorders
+1183,,,A - Schizophrenia
+1188,,,B - No Minority
+1189,,,B - Delusional disorder
+1190,,,B - Health care professionals
+1191,,,B - Healthy volunteers
+1192,,,B - Lay carers/family
+1193,,,B - Psychotic
+1194,,,B - Schizoaffective disorders
+1195,,,B - Schizophrenia
+1196,,,B - Serious mental illness
+1197,,,C - Not applicable
+1198,,,C - Acute
+1199,,,C - Early post-acute
+1200,,,C - Remission
+1201,,,D - Not applicable
+1203,,,D - Prodromal illness
+1204,,,D - First Episode
+1205,,,D - Early illness
+1206,,,D - Persistent / chronic
+1207,,,D - Late onset
+1209,,,E - Aggression (RE Aggression)
+1210,,,E - Agitation (RE Aggression)
+1211,,,E - Akathisia
+1213,,,E - Depression
+1216,,,E - Movement disorders
+1217,,,E - Negative symptoms
+1218,,,E - Not Applicable
+1219,,,E - Parkinsonism
+1220,,,E - Tardive Dyskinesia
+1221,,,E - Treatment Resistant
+1222,,,E - Weight Gain
+1229,,,C - Partial remission
+1231,,,E - Adherence
+1232,,,C - State Not Described
+1233,,,D - Stage not described
+1237,,,A - Schizotypal
+1238,,,C - Suspected
+1239,,,B - Schizophreniform
+1243,,,E - Relapse
+1244,,,E - Neurocognition
+1246,,,E - Substance Abuse (Substance Abuse)
+1247,,,E - Anxiety (RE Aggression)
+1249,,,B - Schizotypal
+1255,,,E - Mood disorder
+1257,,,E - Alcohol (Substance Abuse)
+1258,,,E - Withdrawal
+1261,,,E - Obsessive compulsive symptoms
+1262,,,E - Positive symptoms
+1263,,,E - Amenorrhea
+1264,,,E - Sialorrhea (Hypersalivation)
+1271,,,E - Hypersalivation
+1276,,,E - Delusions
+1277,,,E - Adverse effects
+44936,,,A - Schizophreniform
+44965,,,E - Mammogen level
+44968,,,E - Social function
+44970,,,E - Prolactin level
+44971,,,E - Cognitive function
+44974,,,E - Compliance
+44977,,,E - Excitement (RE Aggression)
+44979,,,E - Abnormal ECG
+44983,,,E - Memory
+44984,,,E - Electrocardiogram
+44985,,,E - Glucose metabolism
+44986,,,E - Self-esteem
+44989,,,E - Erythrocyte sedimentation rate
+44992,,,E - Constipation
+44993,,,E - Paralytic ileus
+44994,,,E - Enuresis
+44995,,,E - Urinary retention
+44998,,,E - Liver function
+45001,,,E - Sinus tachycardia
+45002,,,E - Xerostomia
+45014,,,E - Behaviour
+45017,,,E - Glucose and lipid metabolism
+45019,,,E - Extrapyramidal symptoms
+45021,,,E - Glucose level
+45023,,,E - Immunity
+45025,,,E - Tremor
+45026,,,E - Leukopenia
+45027,,,E - Potassium level
+45029,,,E - Blood pressure
+45037,,,E - Blood glucose
+45039,,,E - Electroencephalogram
+45040,,,E - Emotion and social function
+45045,,,E - Negative emotions
+45047,,,E - Growth Hormone Level
+45048,,,E - Blood lipid
+45060,,,E - Blood concentration
+45062,,,E - Salivation
+45069,,,E - Expressed emotion and relapse
+45081,,,E - Glutamate level
+45096,,,E - Adverse events
+45104,,,E - Negative behaviour
+45112,,,E - Executive function
+45114,,,E - Blood Drug Level
+45118,,,E - Menstruation
+45119,,,E - Hepatic dysfunction
+45121,,,E - Spinal fracture
+45128,,,E - Negative + Positive symptoms
+45134,,,E - Metabolic syndrome
+45138,,,E - Dystonia
+45140,,,E - Polysialia adverse effects
+45145,,,E - Serum prolactin level
+45148,,,E - Serum lipid
+45151,,,E - Emotional disorder
+45153,,,E - Decubitus
+45155,,,E - Health education
+45159,,,E - Low self-esteem
+45161,,,E - Lipid metabolic
+45162,,,E - Dysphrenia
+45168,,,E - Function improvement
+45181,,,E - Hallucinations
+45183,,,E - Diabetes mellitus
+45187,,,E - Leucocyte
+45194,,,E - Metabolism
+45204,,,E - Sex hormone level
+45214,,,E - Glycometabolism
+45236,,,A - Psychotic
+45238,,,A - Serious Mental Illness
+45308,,,E - Polydipsia-hyponatremia
+45314,,,E - Cardiovascular autonomic reactivity
+45317,,,E - Learning disability
+45318,,,E - Hypnotic action
+45321,,,E - Heart disease
+45337,,,E - Homelessness
+45338,,,E - Cardiovascular disease
+45339,,,E - Sexual functioning
+45350,,,E - Decomposition
+45356,,,E - Post-psychotic depression
+45365,,,E - Hyperlipidemia
+45372,,,E - Visual hypersensitivity attack
+45373,,,E - Influence of comorbid personality disorder and serious mental illness on police contacts
+45377,,,E - Erectile dysfunction
+45380,,,E - Suicide
+45398,,,E - Dementia
+45399,,,E - Hyperprolactinemia
+45404,,,E - Breast Cancer
+45421,,,E - Jail Recidivism
+45424,,,E - Early response to treatment
+45425,,,E - Cholesterol
+45429,,,E - Endogenous depression
+45430,,,E - Sleep
+45434,,,E - Sweat odour
+45435,,,E - Eye abnormalities
+45436,,,E - Metabolic disorder
+45438,,,E - Hyperhomocysteinemia
+45448,,,E - Attention
+45450,,,E - EEG
+45461,,,E - C-reactive protein levels
+45533,,,E - interleukin level
+45536,,,E - Anhedonia
+45538,,,E - Oral hygiene
+45539,,,E - Cardiac outcomes
+45543,,,E - Smoking (Substance Abuse)
+45545,,,E - HIV
+45546,,,E - Stigma
+45548,,,E - Exacerbation (RE Aggression)
+45549,,,E - Economic
+45554,,,E - Hypertension
+45555,,,E - Hypotonic disorders
+45556,,,E - Mental retardation
+45559,,,E - Digestion
+45560,,,E - Defective cerebral circulation
+45561,,,E - Cannabis Use (Substance Abuse)
+45562,,,E - Disturbed
+45563,,,E - Neuroleptic resistant
+45564,,,E - Polydipsia
+45565,,,E - Psychopathology
+45566,,,E - Neurocognitive Deficits
+45567,,,E - Early onset
+45568,,,E - Engagement
+45569,,,E - Employment
+45570,,,E - Dual diagnosis
+45571,,,E - Insulin
+45572,,,E - Self-perception
+45573,,,e - Dystonia-parkinsonism
+45574,,,E - Herpes
+45575,,,E - Rehabilitation
+45577,,,E - Voices
+45578,,,E - PTSD
+45579,,,E - Exercise
+45581,,,E - Independent living
+45582,,,E - Mental disability
+45583,,,E - Paranoia
+45584,,,E - Offenders
+45585,,,E - Postmenopausal
+45586,,,E - Cognition
+45587,,,E - Social cognition
+45588,,,E - Eye movements
+45589,,,E - Amphetamine (Substance Abuse)
+45590,,,E - Diet (Weight)
+45591,,,E - Comorbid
+45592,,,E - HSVI
+45593,,,E - Insomnia
+45594,,,E - Sensory gating
+45595,,,E - Quality of life
+45596,,,E - Stress
+45598,,,E - Obesity (Weight)
+45599,,,E - Excitement and Agitation (RE Aggression)
+45600,,,A - At Risk of Psychosis
+45601,,,A - Family History of Psychosis
+45602,,,A - Mental Illness
+45603,,,A - Not Described
+45604,,,D - Chronic
+45605,,,E - Cardiovascular Risk Factor
+45606,,,E - Childhood Learning Disabilities
+45607,,,E - Drug Dependence (Substance Abuse)
+45608,,,E - Nicotine Dependence (Substance Abuse)
+45609,,,E - Cocaine Dependence (Substance Abuse)
+45610,,,E - Cognitive Impairment
+45611,,,E - Comorbidity
+45612,,,E - Diabetes
+45613,,,E - Dually Diagnosed
+45614,,,E - Diminished P50 Sensory Gating
+45615,,,E - Discrimination
+45616,,,E - Drug and Alcohol Use (Substance Abuse)
+45617,,,E - ECT-Induced Cognitive Impairment
+45618,,,E - Epilepsy
+45619,,,E - Gliadin-Positive
+45620,,,E - Hepatitis
+45621,,,E - Herpes Simplex
+45622,,,E - Methamphetamine Dependence (Substance Abuse)
+45623,,,E - Hyperglycemia
+45624,,,E - Muteness
+45625,,,E - Non-Adherence
+45626,,,E - Hyperprolinemia
+45627,,,E - Impulsivity
+45628,,,E - Marked Social Withdrawal
+45629,,,E - Opioid Dependence (Substance Abuse)
+45630,,,E - Overweight
+45631,,,E - Pathological Gambling
+45632,,,E - Postmenopause
+45633,,,E - Prolactinemia
+45634,,,E - Restless Legs Syndrome
+45635,,,E - Substance Use (Substance Abuse)
+45636,,,E - Unemployment
+45637,,,E - Violence (RE Aggression)
+45638,,,A - Tardive Dyskinesia
+45639,,,E - Asthma
+45640,,,E - COPD
+45641,,,E - Compulsory Admission (RE Aggression)
+45642,,,E - Pregnancy
+45643,,,E - At Risk of Psychosis
+45644,,,E - Acutely Disturbed (RE Aggression)
+45645,,,A - Delirium
+45646,,,A - Illness
+45647,,,E - Chronic HCV Infection
+45648,,,E - Galactorrhea-Amenorrhea Syndrome
+45649,,,E - Psychiatric Illness
+45650,,,E - Suicidal Ideation

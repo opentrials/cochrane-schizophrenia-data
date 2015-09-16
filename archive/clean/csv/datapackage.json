@@ -8,6 +8,299 @@
     ],
     "resources": [
         {
+            "path": "data/condition.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "meddra",
+                        "type": "string"
+                    },
+                    {
+                        "name": "who_icd_10",
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/document.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "tag",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string"
+                    },
+                    {
+                        "name": "contents",
+                        "type": "binary"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/method.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/review.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "type": "string"
+                    },
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "notes",
+                        "type": "string"
+                    },
+                    {
+                        "name": "contacts",
+                        "type": "string"
+                    },
+                    {
+                        "name": "abstract",
+                        "type": "language"
+                    },
+                    {
+                        "name": "central_id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "central_status",
+                        "type": "string"
+                    },
+                    {
+                        "name": "central_date",
+                        "type": "date"
+                    },
+                    {
+                        "name": "authors",
+                        "type": "string"
+                    },
+                    {
+                        "name": "publisher",
+                        "type": "string"
+                    },
+                    {
+                        "name": "journal",
+                        "type": "string"
+                    },
+                    {
+                        "name": "year",
+                        "type": "string"
+                    },
+                    {
+                        "name": "volume",
+                        "type": "string"
+                    },
+                    {
+                        "name": "issue",
+                        "type": "string"
+                    },
+                    {
+                        "name": "pages",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/source.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "name": "category",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/trial.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "source_id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "public_title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "scientific_title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "condition_or_problem",
+                        "type": "string"
+                    },
+                    {
+                        "name": "source_of_funding",
+                        "type": "string"
+                    },
+                    {
+                        "name": "countries",
+                        "type": "string"
+                    },
+                    {
+                        "name": "contacts",
+                        "type": "string"
+                    },
+                    {
+                        "name": "date_from",
+                        "type": "date"
+                    },
+                    {
+                        "name": "date_to",
+                        "type": "date"
+                    },
+                    {
+                        "name": "notes",
+                        "type": "string"
+                    },
+                    {
+                        "name": "central_id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "central_status",
+                        "type": "string"
+                    },
+                    {
+                        "name": "central_date",
+                        "type": "date"
+                    },
+                    {
+                        "name": "exclusion_criteria",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sample_size",
+                        "type": "text"
+                    },
+                    {
+                        "name": "age_from",
+                        "type": "number"
+                    },
+                    {
+                        "name": "age_to",
+                        "type": "number"
+                    },
+                    {
+                        "name": "sex",
+                        "type": "string"
+                    },
+                    {
+                        "name": "interventions",
+                        "type": "string"
+                    },
+                    {
+                        "name": "outcomes",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/trial2condition.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "trial_id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "condition_id",
+                        "type": "number"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/trial2method.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "trial_id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "method_id",
+                        "type": "number"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/trial2review.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "trial_id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "review_id",
+                        "type": "number"
+                    }
+                ]
+            }
         }
     ]
 }

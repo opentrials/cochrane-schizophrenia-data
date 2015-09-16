@@ -1,6 +1,8 @@
 {
     "name" : "opentrials-cochrane-schizophrenia-data",
     "title" : "Cleaned data from the Cochrane schizophrenia database",
+    "description" : "Cleaned data from the Cochrane schizophrenia database",
+    "homepage": "https://github.com/okfn/opentrials-cochrane-schizophrenia-data",
     "sources" : [
         {
             "name": "The Cochrane schizophrenia database"
@@ -8,7 +10,7 @@
     ],
     "resources": [
         {
-            "path": "data/condition.csv",
+            "path": "/data/condition.csv",
             "schema": {
                 "fields": [
                     {
@@ -31,7 +33,7 @@
             }
         },
         {
-            "path": "data/document.csv",
+            "path": "/data/document.csv",
             "schema": {
                 "fields": [
                     {
@@ -54,7 +56,7 @@
             }
         },
         {
-            "path": "data/method.csv",
+            "path": "/data/method.csv",
             "schema": {
                 "fields": [
                     {
@@ -69,7 +71,7 @@
             }
         },
         {
-            "path": "data/review.csv",
+            "path": "/data/review.csv",
             "schema": {
                 "fields": [
                     {
@@ -144,7 +146,7 @@
             }
         },
         {
-            "path": "data/source.csv",
+            "path": "/data/source.csv",
             "schema": {
                 "fields": [
                     {
@@ -167,7 +169,7 @@
             }
         },
         {
-            "path": "data/trial.csv",
+            "path": "/data/trial.csv",
             "schema": {
                 "fields": [
                     {
@@ -258,7 +260,7 @@
             }
         },
         {
-            "path": "data/trial2condition.csv",
+            "path": "/data/trial2condition.csv",
             "schema": {
                 "fields": [
                     {
@@ -273,7 +275,7 @@
             }
         },
         {
-            "path": "data/trial2method.csv",
+            "path": "/data/trial2method.csv",
             "schema": {
                 "fields": [
                     {
@@ -288,7 +290,7 @@
             }
         },
         {
-            "path": "data/trial2review.csv",
+            "path": "/data/trial2review.csv",
             "schema": {
                 "fields": [
                     {

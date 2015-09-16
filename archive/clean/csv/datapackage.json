@@ -1,0 +1,13 @@
+{
+    "name" : "opentrials-cochrane-schizophrenia-data",
+    "title" : "Cleaned data from the Cochrane schizophrenia database",
+    "sources" : [
+        {
+            "name": "The Cochrane schizophrenia database"
+        }
+    ],
+    "resources": [
+        {
+        }
+    ]
+}

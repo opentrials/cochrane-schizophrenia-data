@@ -150,6 +150,22 @@
             }
         },
         {
+            "path": "/data/review2document.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "review_id",
+                        "type": "number"
+                    },
+                    {
+                        "name": "document_id",
+                        "type": "number"
+                    }
+                ],
+                "primaryKey": ["review_id", "document_id"]
+            }
+        },
+        {
             "path": "/data/source.csv",
             "schema": {
                 "fields": [

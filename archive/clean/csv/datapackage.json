@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "condition",
-            "path": "/data/condition.csv",
+            "path": "data/condition.csv",
             "schema": {
                 "fields": [
                     {
@@ -36,7 +36,7 @@
         },
         {
             "name": "document",
-            "path": "/data/document.csv",
+            "path": "data/document.csv",
             "schema": {
                 "fields": [
                     {
@@ -61,7 +61,7 @@
         },
         {
             "name": "method",
-            "path": "/data/method.csv",
+            "path": "data/method.csv",
             "schema": {
                 "fields": [
                     {
@@ -78,7 +78,7 @@
         },
         {
             "name": "review",
-            "path": "/data/review.csv",
+            "path": "data/review.csv",
             "schema": {
                 "fields": [
                     {
@@ -155,7 +155,7 @@
         },
         {
             "name": "review2document",
-            "path": "/data/review2document.csv",
+            "path": "data/review2document.csv",
             "schema": {
                 "fields": [
                     {
@@ -190,7 +190,7 @@
         },
         {
             "name": "source",
-            "path": "/data/source.csv",
+            "path": "data/source.csv",
             "schema": {
                 "fields": [
                     {
@@ -215,7 +215,7 @@
         },
         {
             "name": "trial",
-            "path": "/data/trial.csv",
+            "path": "data/trial.csv",
             "schema": {
                 "fields": [
                     {
@@ -318,7 +318,7 @@
         },
         {
             "name": "trial2condition",
-            "path": "/data/trial2condition.csv",
+            "path": "data/trial2condition.csv",
             "schema": {
                 "fields": [
                     {
@@ -353,7 +353,7 @@
         },
         {
             "name": "trial2drug",
-            "path": "/data/trial2drug.csv",
+            "path": "data/trial2drug.csv",
             "schema": {
                 "fields": [
                     {
@@ -388,7 +388,7 @@
         },
         {
             "name": "trial2method",
-            "path": "/data/trial2method.csv",
+            "path": "data/trial2method.csv",
             "schema": {
                 "fields": [
                     {
@@ -423,7 +423,7 @@
         },
         {
             "name": "trial2review",
-            "path": "/data/trial2review.csv",
+            "path": "data/trial2review.csv",
             "schema": {
                 "fields": [
                     {
